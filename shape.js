@@ -74,10 +74,10 @@ class Square{
         this.row = row;
         this.column = column;
         this.color = "green";
+        table.grid[this.row][this.column] = new Cell(this.row, this.column, this.color);
     }
 
-    draw(){
-        table.grid[this.row][this.column] = new Cell(this.row, this.column, this.color);
+    draw(){        
         table.drawGrid();
     }
 }
